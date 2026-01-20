@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JALDI - बिजनेस पैनल</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background: #fdfdfd; padding-bottom: 80px; }
+        header { background: #1d3557; color: white; padding: 20px; text-align: center; }
+        .form-box { background: white; margin: 15px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h3 { color: #1d3557; border-bottom: 2px solid #e63946; padding-bottom: 5px; }
+        input, select, button { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; }
+        button { background: #e63946; color: white; font-weight: bold; cursor: pointer; border: none; font-size: 16px; }
+        .footer { position: fixed; bottom: 0; width: 100%; background: #111; display: flex; height: 70px; }
+        .nav-btn { flex: 1; color: white; border: none; background: none; text-align: center; text-decoration: none; padding-top: 15px; font-size: 14px; border-right: 1px solid #333; }
+        .active { background: #333; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JALDI - बिजनेस</h1>
+        <p>अपनी दुकान को ऑनलाइन लाएं</p>
+    </header>
+
+    <div class="form-box">
+        <h3>1. दुकान का रजिस्ट्रेशन</h3>
+        <input type="text" placeholder="दुकान का नाम">
+        <select>
+            <option>कैटेगरी चुनें</option>
+            <option>रेस्टोरेंट</option>
+            <option>किराना</option>
+            <option>कपड़े</option>
+            <option>मेडिकल</option>
+        </select>
+        <p style="font-size: 12px; margin-top: 10px;">आधार, पैन, बैंक पासबुक (फोटो चुनें):</p>
+        <input type="file" multiple>
+        <button onclick="alert('दस्तावेज जमा हो गए! हम 24 घंटे में चेक करेंगे।')">रजिस्टर करें</button>
+    </div>
+
+    <div class="form-box">
+        <h3>2. सामान लाइव करें (Zomato स्टाइल)</h3>
+        <input type="text" placeholder="सामान का नाम (उदा: काला जामुन)">
+        <input type="number" placeholder="कीमत (₹)">
+        <input type="file" title="सामान की फोटो">
+        <button style="background: #28a745;" onclick="alert('बधाई हो! आपका सामान लाइव हो गया है।')">अभी लाइव करें</button>
+    </div>
+
+    <footer class="footer">
+        <a href="index.html" class="nav-btn">🛒 सामान खरीदें</a>
+        <a href="business.html" class="nav-btn active">💼 बिजनेस/दुकान</a>
+    </footer>
+</body>
+</html>
